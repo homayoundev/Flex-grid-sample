@@ -12,9 +12,11 @@
   --mainblack: #1b1a17;
   --mainyellow: #f0a500;
   --mainred: #890f0d;
-  --maingreen: #019267;
+  --maingreen: #006d2a;
   --mainorange: #e45826;
   --maingray: #203239;
+  --mainlightgray: #dfdfdf;
+  --mainlightblack : #ededed;
 }
 
 /*End of adding colors */
@@ -25,9 +27,11 @@
 }
 
 body {
-  background-color: var(--mainwhite);
+  background-color: var(--mainlightblack);
   font-family: "Ubuntu";
 }
+
+/* nav */
 
 .main-nav {
   display: flex;
@@ -59,5 +63,91 @@ body {
 }
 
 .nav-logo img {
-max-height: 30px;
+  max-height: 30px;
 }
+
+/* end of nav */
+
+/* main */
+
+.products {
+    max-width: 1200px;
+    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--mainwhite);
+
+}
+
+.product {
+  height: 450px;
+  width: 300px;
+  margin: 2rem 0.5rem;
+  background: var(--mainwhite);
+  border: 1px solid var(--mainlightgray);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.product:hover {
+  height: 450px;
+  width: 300px;
+  margin: 0.5rem 0.5rem;
+  background: var(--mainlightblack);
+  border: 1px solid #d6d6d6;
+  transition: ease-out 0.5s;
+}
+
+.product-img {
+  max-width: 90%;
+  margin-top: 2rem;
+  border-radius: 5%;
+  border: 1px var(--mainlightgray) solid;
+}
+
+.product-details {
+  /* margin-top: 1rem; */
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-detail {
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+.product-size {
+}
+
+.product-cost {
+    border: 2px dashed red;
+    border-radius:  0.5rem;
+    padding: 0.35rem;
+}
+
+.product-button {
+  width: 6rem;
+  height: 2rem;
+  color: #d6d6d6;
+  background-color: var(--maingray);
+  border-radius: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  transition: ease-out 0.5s all;
+  
+}
+
+.product-button:hover {
+  background: whitesmoke;
+  color: var(--maingray);
+  outline: 1px solid gray;
+}
+
+/* end of main  */

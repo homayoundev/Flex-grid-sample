@@ -1,0 +1,18 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: var(--mainwhite);
+}
+
+:root {
+    --mainblue: #006778;
+    --mainwhite: #F7F7F7;
+    --mainblack: #1B1A17;
+    --mainyellow: #F0A500;
+    --mainred: #890F0D;
+    --maingreen: #019267;
+    --mainorange: #E45826;
+    --maingray: #E6D5B8;
+  }
+

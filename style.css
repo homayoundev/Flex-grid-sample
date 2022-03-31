@@ -151,3 +151,28 @@ body {
 }
 
 /* end of main  */
+
+
+/* footer */
+
+.footer {
+    height: 12rem;
+    background: var(--mainblack);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 2rem;
+    color: var(--mainlightblack);
+    font-weight: bold;
+}
+
+.footer-desc a {
+   color: var(--mainlightblack);
+    text-decoration: none;
+}
+
+/* end of footer */

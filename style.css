@@ -1,18 +1,63 @@
+/* Adding fonts */
 
-* {
-    padding: 0;
-    margin: 0;
-    background-color: var(--mainwhite);
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+
+/*End of adding fonts */
+
+/* Adding colors */
 
 :root {
-    --mainblue: #006778;
-    --mainwhite: #F7F7F7;
-    --mainblack: #1B1A17;
-    --mainyellow: #F0A500;
-    --mainred: #890F0D;
-    --maingreen: #019267;
-    --mainorange: #E45826;
-    --maingray: #E6D5B8;
-  }
+  --mainblue: #051367;
+  --mainwhite: #f7f7f7;
+  --mainblack: #1b1a17;
+  --mainyellow: #f0a500;
+  --mainred: #890f0d;
+  --maingreen: #019267;
+  --mainorange: #e45826;
+  --maingray: #203239;
+}
 
+/*End of adding colors */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--mainwhite);
+  font-family: "Ubuntu";
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--maingray);
+  height: 50px;
+  padding: 1rem;
+}
+
+.navbar {
+  max-width: 1200px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  font-size: 1.5rem;
+  color: var(--mainwhite);
+  cursor: pointer;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  color: var(--mainwhite);
+  font-family: "Roboto";
+}
+
+.nav-logo img {
+max-height: 30px;
+}
